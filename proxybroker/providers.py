@@ -2,6 +2,7 @@ import re
 import socket
 import asyncio
 import warnings
+import time
 from math import sqrt
 from html import unescape
 from base64 import b64decode
@@ -630,6 +631,8 @@ class ProxyProvider(Provider):
 
 
 PROVIDERS = [
+    Provider(url='http://schoolshooting.club/proxy/proxy_'+time.strftime("%d-%m-%Y")+'.txt',
+             proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),
     Provider(url='http://getproxy.net/en/',
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 25
     Provider(url='http://www.proxylists.net/',
