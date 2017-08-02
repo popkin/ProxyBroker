@@ -7,6 +7,6 @@ dependencies:
 - pip:
   - sphinx
   - alabaster
-  - aiohttp
+  - aiohttp==2.0.0
   - aiodns
   - maxminddb
