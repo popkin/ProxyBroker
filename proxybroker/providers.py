@@ -617,7 +617,7 @@ class Proxylistplus_com(Provider):
     domain = 'list.proxylistplus.com'
 
     async def _pipe(self):
-        urls = ['http://list.proxylistplus.com/Fresh-HTTP-Proxy-List-%d' % n
+        urls = ['https://list.proxylistplus.com/Fresh-HTTP-Proxy-List-%d' % n
                 for n in range(1, 7)]
         await self._find_on_pages(urls)
 
@@ -653,8 +653,6 @@ PROVIDERS = [
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 1875
     Provider(url='http://socks24.ru/proxy/httpProxies.txt',
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 1601
-    Provider(url='http://fineproxy.org/eng/?p=6',
-             proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 1819
     Provider(url='http://www.socks-proxy.net/',
              proto=('SOCKS4', 'SOCKS5')),                           # 80
     Provider(url='http://www.cybersyndrome.net/pla.html',
@@ -675,15 +673,12 @@ PROVIDERS = [
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 569
     Provider(url='http://proxy.rufey.ru/',
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 153
-    Provider(url='http://mitituti.com/content/proxy.txt',
-             proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 227
     Provider(url='http://geekelectronics.org/my-servisy/proxy',
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 395
     Proxy_list_org(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 140
     Xseo_in(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),                  # 252
     Spys_ru(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),                  # 674
     Proxylistplus_com(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),        # 301
-    Proxyb_net(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),               # 857
     Proxz_com(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25'), max_conn=2),    # 443
     Proxymore_com(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),            # 1375
     Proxylist_me(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),             # 2872
