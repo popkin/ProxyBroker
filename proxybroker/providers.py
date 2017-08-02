@@ -630,7 +630,7 @@ class ProxyProvider(Provider):
 
 
 PROVIDERS = [
-    Provider(url='https://getproxy.net/en/',
+    Provider(url='http://getproxy.net/en/',
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 25
     Provider(url='http://www.proxylists.net/',
              proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 44
